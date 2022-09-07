@@ -13,7 +13,8 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Obx( ()=> Text('Home Page -> ' + _ctrl.count.value.toString()) ),
+          title:
+              Obx(() => Text('Home Page -> ' + _ctrl.count.value.toString())),
         ),
         body: Column(
           children: [
@@ -36,15 +37,14 @@ class Home extends StatelessWidget {
                     onPressed: () {
                       Get.toNamed('/register');
                     },
-                    child: const Text('Register Page')
-                ),
+                    child: const Text('Register Page')),
                 ElevatedButton(
                     onPressed: () {
-                      _ctrl.count( _ctrl.count.value + 1 );
+                      _ctrl.count(_ctrl.count.value + 1);
                     },
-                    child: const Text('++ Count')
-                ),
-              ],mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    child: const Text('++ Count')),
+              ],
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
             )
           ],
           mainAxisAlignment: MainAxisAlignment.center,

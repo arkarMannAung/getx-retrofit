@@ -7,8 +7,9 @@ class Controller extends GetxController {
   RxString token = ''.obs;
 
   @override
+  // ignore: unnecessary_overrides
   void onInit() {
-    // localStorage ထဲက ဒေတာတွေကို 
+    // localStorage ထဲက ဒေတာတွေကို
     super.onInit();
   }
 }
